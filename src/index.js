@@ -8,6 +8,9 @@ import { createStore, applyMiddleware } from 'redux';
 import promiseMiddleware  from 'redux-promise';
 import ReduxThunk from 'redux-thunk';
 import Reducer from './redux/reducers';
+import Button from 'react-bootstrap/Button';
+import { FaBeer } from 'react-icons/fa';
+
 
 const createStoreWithMiddleware = applyMiddleware(promiseMiddleware, ReduxThunk)(createStore);
 
